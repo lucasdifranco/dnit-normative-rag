@@ -2,7 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+*.claude
 # C extensions
 *.so
 
@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Índices FAISS cacheados em disco (gerados pelo app)
+indices/
+indice_rag/
+
+# Artefatos gerados pelo normativas.py (reproduzíveis: rode o script)
+docs/*.pdf
+normas_dnit_001_008.zip
